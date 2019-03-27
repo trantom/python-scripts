@@ -9,7 +9,7 @@ r = requests.get(url)
 
 bikestation_data = r.json()
 bikestation_data_dict = bikestation_data['data']
-bikestation_data_list = bikestation_data_dict['stations']
+bikestation_data_list = bikestation_data_dict['Stations']
 
 filename_with_time = 'bikestations_' + time.strftime('%Y%m%d') + '_' + time.strftime('%H%M') + '.csv'
 # will write to new file in same folder as script
