@@ -24,7 +24,7 @@ with open(filename_with_time, 'w', newline='') as file_to_write:
 	])
 	
 	for station in bikestation_data_list:
-		print('Writing row...')
+		print('Writing row...' + station['name'])
 		writer.writerow([
 			station['lon'],
 			station['lat'],
